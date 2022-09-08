@@ -1,0 +1,39 @@
+body {
+    font-family: 'Alumni Sans Pinstripe';
+    font-weight: bold;
+    font-size: 1.25em;
+    background: whitesmoke;
+}
+#logoCandado{
+    display: inline;
+    vertical-align: middle;
+    margin: 10px;
+}
+.textoLogo{
+    display: inline;
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: bold;
+    color: darkturquoise;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main{
+    display: flex;
+    width: auto;
+    align-content: center;
+    vertical-align: middle;
+}
+.cajaEncriptar{
+    
+   
+}
+.imagenLupa{
+    width: 200px;
+    visibility:visible;
+    
+   
+}
+.cajaDesencriptar{
+   
+}
