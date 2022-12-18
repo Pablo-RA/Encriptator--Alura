@@ -1,0 +1,1 @@
+El desafío de este proyecto se centra en desarrollar el codigo HTML, CSS y Javascript de una pequeña página web que realiza la función de encriptar un texto bajo ciertas condiciones. Corresponde a un desafío del Programa One Next Education de Oracle y dictado por Alura Latam https://www.aluracursos.com/, programa en el cual fuí becado.
