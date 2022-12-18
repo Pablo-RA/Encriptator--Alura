@@ -2,38 +2,54 @@
 
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <div>
-        <img id="logoCandado" src= "imagenes/Logo.png" alt="Logo del encriptador,es un candado">
-        <p class="textoLogo">Encriptador</p>
-        </div>
-        
-    </header>
-    <main>
-        <section class="cajaEncriptar">
-            <textarea cols="35" rows="30" required placeholder="Ingrese aquí su texto"></textarea>   
-            <input type="button" value="Encriptar" class="botonEncriptar">
-            <input type="button" value="Desencriptar" class="botonDesencriptar">
-        </section>
-        <section class="cajaDesencriptar">
-            <textarea cols="35" rows="30" placeholder="Ingrese el texto que desea encriptar o desencriptar."></textarea> 
-            <img class= "imagenLupa" src="imagenes/lupa.png">
-            <a href="https://www.freepik.es/foto-gratis/lupa-sostenida-sobre-fondo-azul_26203132.htm#query=lupa&position=17&from_view=keyword">Image by andreas</a> on Freepik
-            <input type="button" value="Copiar" class="botonCopiar">
-        </section>
+    <body>
+        <header>
+            <div class="logotipo">
+                <img src="imagenes/Logo.png" alt="Logotipo:es un candado">        
+                <h1>Encriptador</h1>
+            </div>
+        </header>
+       
+        <main class="contenido-principal">
+            <section class="cajaEncriptar">
+               
+                    <textarea class="inputTexto" cols="40" rows="15" placeholder= "Ingrese su texto aquí..."></textarea>
+                    
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick=" botonEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick=" botonDesencriptar()">Desencriptar</button>
+                    <button class="pegar">Pegar</button>
+                </div>
+                </div>
+            </section>
+            <section class="cajaMensaje">
+                <div>
+                    <textarea class="mensaje" cols="40" rows="15" placeholder="¡Ningun mensaje fue encontrado! Ingrese el texto que desee encriptar o desencriptar..."></textarea>
+                </div>    
+                <div class="btn-copiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                    <button class="pegar">Pegar</button>
+                </div>
 
-    </main>
-    <footer>
-
-    </footer>
-</body>
+            </section>
+       
+        </main>
+        <script src="script.js"></script>
+        <footer>
+            <img src="imagenes/logo.png" alt="Logotipo:es un candado">
+            <p>Desafío realizado para el programa One Next Education - Oracle - Alura LATAM</p>
+        </footer>
+    </body>
 </html>
