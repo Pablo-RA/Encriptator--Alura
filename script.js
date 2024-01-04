@@ -57,4 +57,14 @@ function copiar() {
     alert ("¡El texto fue copiado exitosamente!")
 }
 //function pegar (){} para el cuadro mensaje encriptado
-//function pegar (){} para el cuadro mensaje a encriptar
+function pegar () {
+    document.querySelector(".pegar").addEventListener("click", function() {
+        navigator.clipboard.readText()
+            .then(text => {
+                document.querySelector(".inputTexto").value = text;
+            })
+            .catch(err => {
+                console.error('Error al leer el portapapeles: ', err);
+            });
+    });
+}    

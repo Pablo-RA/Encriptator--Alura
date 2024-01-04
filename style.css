@@ -2,6 +2,9 @@ body{
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-family: 'Barlow Condensed', sans-serif;
     background-color:azure;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .logotipo{
     display: inline-flex;
@@ -18,8 +21,8 @@ body{
 .contenido-principal{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -30,6 +33,23 @@ body{
     font-size: larger;
     font-family: inherit;
     resize: vertical;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.copiar, .encriptar, .desencriptar, .pegar  {
+    background-color: #0796a7;/* Color de fondo */
+    border: none;/* Sin bordes */
+    color: white;/* Color del texto */
+    font-family: inherit; /*fuente del texto del boton*/
+    padding: 5px 20px;/* Espaciado interno */
+    cursor: pointer;/* Cursor */
+    border-radius: 12px;/* Bordes redondeados */
+    
 }
 
 .mensaje{
@@ -47,6 +67,7 @@ body{
 footer {
     text-align: center;
     background: url(imagenes/bg_footer.jpg);
+    background-size: auto;
     padding: 20px;
-    margin-top: 15px;
+    margin-top: auto;
 }
